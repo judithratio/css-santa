@@ -76,6 +76,13 @@ body{
 	right: 35px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ /* width: 50%;*/
+}
+
 .eye1, .eye2{
 	height: 15px;
 	width: 30px;
@@ -139,6 +146,11 @@ body{
 color: #000;		
 }
 
+@font-face {
+  font-family: 'Mountains of Christmas';
+  font-style: normal;
+  src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2"); }
+
 .message {
   position: absolute;
   left: 50%;
@@ -172,7 +184,9 @@ color: #000;
       .message h2 a:hover {
         opacity: 1; 
     }
-
+ .message button{
+ 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
 
 /*!
  * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.4/customize/)
