@@ -167,7 +167,7 @@ color: #000;
 }
   .message h1 {
     font-style: normal;
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 0;
     white-space: nowrap; 
     display: block;
@@ -176,7 +176,7 @@ color: #000;
 }
  .message h2 {
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     white-space: nowrap; 
 }
