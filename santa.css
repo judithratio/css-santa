@@ -136,3 +136,31 @@ body{
   font-family: 'Raleway', sans-serif;
 color: #000;		
 }
+
+.message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 80px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #f8e7dc;
+  font-family: 'Mountains of Christmas'; }
+  .message h1 {
+    font-style: normal;
+    font-size: 75px;
+    margin-bottom: 0;
+    white-space: nowrap; }
+  .message h2 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap; }
+    .message h2 a {
+      color: #f7be10;
+      opacity: 0.8; }
+      .message h2 a:hover {
+        opacity: 1; }
