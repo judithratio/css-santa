@@ -158,19 +158,21 @@ color: #000;
     margin-bottom: 0;
     white-space: nowrap; 
 }
-  .message h2 {
+ .message h2 {
     margin: 0;
     font-size: 20px;
     text-align: center;
     white-space: nowrap; 
 }
-    .message h2 a {
+
+ .message h2 a {
       color: #f7be10;
       opacity: 0.8; 
   }
       .message h2 a:hover {
         opacity: 1; 
     }
+
 
 /*!
  * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.4/customize/)
