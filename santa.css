@@ -150,22 +150,22 @@ color: #000;
   color: #f8e7dc;
   font-family: 'Mountains of Christmas'; 
 }
-  .message h1 {
+  .message h3 {
     font-style: normal;
-    font-size: 75px;
+    font-size: 50px;
     margin-bottom: 0;
     white-space: nowrap; 
 }
-  .message h2 {
+  .message h6 {
     margin: 0;
-    font-size: 20px;
+    /*font-size: 20px;*/
     text-align: center;
     white-space: nowrap; 
 }
-    .message h2 a {
+    .message h6 a {
       color: #f7be10;
       opacity: 0.8; 
   }
-      .message h2 a:hover {
+      .message h6 a:hover {
         opacity: 1; 
     }
