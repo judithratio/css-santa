@@ -102,7 +102,7 @@ html {
                 <br>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
                         View Historical Information
-                    </button>
+                </button>
             </div>
         </div>
         <svg class="arrows">
@@ -110,6 +110,12 @@ html {
               <path class="a2" d="M0 20 L30 52 L60 20"></path>
               <path class="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
+        <div>
+            <div class="bottomright">
+                <div style="font-size:13px; color:white;">Visit count:</div>
+                <div align="right" style="font-size:15px; font-weight: bold; color: #f7be10;" class="website-counter"></div>
+            </div>
+        </div>
         <!-- Modal -->
         <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -194,6 +200,28 @@ html {
         </script>
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script type="text/javascript">
+            var counterContainer = document.querySelector(".website-counter");
+            var resetButton = document.querySelector("#reset");
+            var visitCount = localStorage.getItem("page_view");
+
+            // Check if page_view entry is present
+            if (visitCount) {
+              visitCount = Number(visitCount) + 1;
+              localStorage.setItem("page_view", visitCount);
+            } else {
+              visitCount = 1;
+              localStorage.setItem("page_view", 1);
+            }
+            counterContainer.innerHTML = visitCount;
+
+            // Adding onClick event listener
+            resetButton.addEventListener("click", () => {
+              visitCount = 1;
+              localStorage.setItem("page_view", 1);
+              counterContainer.innerHTML = visitCount;
+            });
+        </script>
 </body>
 
 </html>
