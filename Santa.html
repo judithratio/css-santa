@@ -12,10 +12,26 @@
     <link rel="icon" href="logo.png" type="image/icon type">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 1000px;
+}
+
+#section2 {
+  height: 600px;
+}
+</style>
+
 </head>
 
 <body>
-    <iframe src="music.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <section id="section1">
+        <!-- <iframe src="music.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
     <ul class="lightrope">
         <li></li>
         <li></li>
@@ -88,6 +104,11 @@
                     </button>
             </div>
         </div>
+        <svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
         <!-- Modal -->
         <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -144,6 +165,22 @@
                 ❄
             </div>
         </div>
+    </section>
+    <section id="section2">
+        <center>
+            <div class="mt-4">
+                <h1 style="font-family: 'Mountains of Christmas';font-size: 50px; color: #f8e7dc;"><i style="color:#f14a68;" class="fas fa-holly-berry"></i> CSS Santa <i style="color:#f14a68;" class="fas fa-holly-berry"></i></h1>
+                <video style="width: 60%; height: auto;" controls>
+                  <source src="RATIO_ART_EXHIBIT.mp4" type="video/mp4">
+                  Your browser does not support HTML video.
+                </video>
+                <p style="color: white;"><b>Creation Date:</b> December 10, 2021</p>
+                <small class="text-muted" style="color: white; opacity: 0.8;">This animation of Santa Claus was done in HTML and CSS</small>
+            </div>
+        </center> 
+    </section>
+    
+    <canvas id="myBarChart" width="100%" height="100%"></canvas>
         <script type="text/javascript">
             $(function() {
 
@@ -152,7 +189,6 @@
                     $(modalId).modal('show');
 
                 });
-
             });
         </script>
         <!-- partial -->
